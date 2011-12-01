@@ -33,5 +33,5 @@ If ever necessary, you can stop tracking
 
 	var myMonitor = new IframeActivityMonitor({ trackingInterval: 30000 });
 
-Alternatively, you can call the constructor with an arguments object. The default settings will dispatch the `mousePositionChanged` every 1000 milliseconds, which could be way to frequent for your needs.
+Alternatively, you can call the constructor with an arguments object. The default settings will dispatch the `mousePositionChanged` every 1000 milliseconds, which could be way too frequent for your needs.
 
