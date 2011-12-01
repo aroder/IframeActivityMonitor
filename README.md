@@ -13,7 +13,7 @@ USAGE:
 
 create an instance of the monitor object
 
-'var myMonitor = new IframeActivityMonitor();'
+	var myMonitor = new IframeActivityMonitor();
 
 add an event listener to the window object to listen for
 
@@ -24,7 +24,7 @@ add an event listener to the window object to listen for
 
 start tracking
 
-'monitor.start();'
+	monitor.start();
 
 
 if ever necessary, you can stop tracking
@@ -32,5 +32,6 @@ if ever necessary, you can stop tracking
 	monitor.stop();
 
 
-alternatively, you can call the constructor with an arguments object
-var myMonitor = new IframeActivityMonitor({ trackingInterval: 30000 });
+Alternatively, you can call the constructor with an arguments object
+
+	var myMonitor = new IframeActivityMonitor({ trackingInterval: 30000 });
