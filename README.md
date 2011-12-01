@@ -1,5 +1,5 @@
 Iframe Activity Monitor
---------------------------------------
+======================================
 
 Small library for monitoring user activity within an iframe in a cross domain scenario.
 Same domain of origin policy limits the events that can be shared between iframes and
