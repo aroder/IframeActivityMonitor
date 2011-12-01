@@ -9,7 +9,8 @@ The IframeActivityMonitor allows tracking on an interval of when a user's mouse 
 has changed within any iframe on the page.
 
 
-USAGE:
+Usage
+--------------------------------------
 
 create an instance of the monitor object
 
@@ -22,16 +23,16 @@ add an event listener to the window object to listen for
 	}, false);
 
 
-start tracking
+Start tracking. Any time the cursor is positioned over any iframe in the page, tracking will start. When to cursor moves the mouse out of the iframe, the tracking stops. As long as the cursor remains in the iframe, IframeActivityMonitor will check the cursor position on an interval, defined by `trackingInterval`. If the cursor position has changed, IframeActivityMonitor will dispatch the `mousePositionChanged` event.
 
 	monitor.start();
 
 
-if ever necessary, you can stop tracking
+If ever necessary, you can stop tracking
 
 	monitor.stop();
 
 
-Alternatively, you can call the constructor with an arguments object
+Alternatively, you can call the constructor with an arguments object. The default settings will dispatch the `mousePositionChanged` every 1000 milliseconds, which could be way to frequent for your needs.
 
 	var myMonitor = new IframeActivityMonitor({ trackingInterval: 30000 });
