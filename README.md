@@ -14,7 +14,7 @@ Usage
 
 	var myMonitor = new IframeActivityMonitor();
 
-	create an instance of the monitor object
+create an instance of the monitor object
 
 
 	window.addEventListener('mousePositionChanged', function() {
