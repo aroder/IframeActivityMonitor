@@ -3,7 +3,7 @@ Iframe Activity Monitor
 
 Small library for monitoring user activity within an iframe in a cross domain scenario.
 Same domain of origin policy limits the events that can be shared between iframes and
-their containing document or window.
+their containing document or window. This will help you overcome that limitation.
 
 The IframeActivityMonitor allows tracking on an interval of when a user's mouse position
 has changed within any iframe on the page.
